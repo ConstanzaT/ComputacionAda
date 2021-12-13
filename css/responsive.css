@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#boxContainer{
+    width:100%;
+    display: flex;
+    justify-content:space-around;
+
+}
+
+#boxContainer > section{
+    width:47%;
+    margin-top:10%;
+    background-color: cornsilk;
+
+
+}
+#boxContainer > section h2, #ventasWrapper{
+    width:96%;
+    height:40px;
+    background-color:rgb(72, 70, 187);
+    color:cornsilk;
+    padding:2%;
+}
+
+#reportes > p{
+    margin:3%;
+    background-color: cornsilk;
+
+}
+#reportes > p span{
+    background-color: cornsilk;
+    font-weight: bold;
+
+}
+#VentasSucursalTable{
+    width:100%;
+
+
+}
+#VentasSucursalTable td{
+    padding-left:10%;
+    padding:2%;
+    background-color: cornsilk;
+
+
+}
+#VentasSucursalTable th{
+    padding:2%;
+    background-color:rgb(117, 116, 231);
+    color: cornsilk
+
+}
+
+
+#ventas{
+    width:97%;
+    margin:0 auto;
+    margin-top:2%;
+    margin-bottom:100px;
+
+}
+
+#ventasWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+#ventasWrapper h2{
+    width:30%;
+    background-color:rgb(72, 70, 187);
+
+    color: cornsilk
+
+}
+#ventasWrapper button{
+    padding:10px;
+    background-color: cornsilk;
+    
+
+}
+
+/* modal agregar ventas */
+table{
+    background-color: cornsilk;
+}
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+  }
+  
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  .modal {
+    background-color: #fff;
+    width: 400px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+  }
+  form{
+      width:100%;
+      margin:0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+  }
+  .modal label{
+display: block; 
+margin-top:15px;
+margin-bottom: 15px; }
+  .modal h2 {
+    width:60%;
+    text-align: center;
+    margin:0 auto;
+  }
+  
+  .modal p {
+    opacity: 0.7;
+    font-size: 14px;
+  }
+
+  .modal button{
+      width:20%;
+  }
+  .resultado{
+      display: flex;
+      justify-content: space-around;
+      
+  }
+  .resultado th {
+    padding:20px;
+    color: cornsilk;
+    background-color:rgb(117, 116, 231);
+    }
+    .resultado td{
+        padding:20px;
+        text-align: center;
+
+    }
+    .resultado td button{
+        margin-left:5px;
+    }
+  #botones{
+      display: flex;
+    justify-content: space-around;
+  }
+  #nombres, #componentes, #sucursales, #fechaVenta{
+      width:70%;
+  }
+@media only screen and (max-width: 600px) and (min-width: 5px)  {  
+    #boxContainer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #boxContainer > section{
+        width:100%;
+    
+    }
+    
+} 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi proyecto</title>
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="boxContainer">
+            <section id="ventasSucursal">    
+                <h2>Ventas por sucursal</h2>
+
+                <table id="VentasSucursalTable">
+                    <tr><th>Sucursal</th><th>Total Ventas</th></tr>
+                    <tr>
+                        <td>Resultado</td>
+                        <td>Resultado</td>
+                    </tr>
+                    <tr>
+                        <td>Resultado</td>
+                        <td>Resultado</td>
+                    </tr>
+                    
+                </table>
+            </table>
+            </section>
+
+            <section id="reportes">    
+                <h2>Reportes</h2>
+                <p>Producto estrella: <span>Resultado</span></p>
+                <p>Vendedora que más ingresos generó: <span>Resultado</span></p>
+            </section>
+    </section>
+
+
+    <section id="ventas">
+        <div id="ventasWrapper">
+            <h2>Ventas</h2>
+            <button id="btn">Nueva venta</button>
+         </div>
+        <table class="resultado">
+            <tr><th>Fecha</th><th>Vendedora</th><th>Sucursal</th><th>Componentes</th><th>Precio</th><th>Acciones</th></tr>
+
+            <tr id="resultado">
+              
+            </tr>
+           
+           
+        </table>
+    </section>
+
+    <!-- MODAL AGREGAR VENTA-->
+    <div id="modal_container" class="modal-container">
+        <div class="modal">
+          <h2>Agregar Venta</h2>
+       
+          <form>
+          <label>Vendedoras: </label>
+         <select id="nombres" >
+             <option value="">Seleccione...</option>
+                <option value="Ada">Ada</option>
+                <option value="Grace">Grace</option>
+                <option value="Hedy">Hedy</option>
+                <option value="Sheryl">Sheryl</option>
+            </select>
+            <label>Componentes: </label>
+
+            <select id="componentes" >
+                <option value="">Seleccione...</option>
+                <option value="Monitor GPRS 3000">Monitor GPRS 3000</option>
+                <option value="Motherboard ASUS 1500">Motherboard ASUS 1500</option>
+                <option value="Monitor ASC 543">Monitor ASC 543</option>
+                <option value="Motherboard ASUS 1200">Motherboard ASUS 1200</option>
+            </select>
+
+            <label>Sucursales: </label>
+            <select id="sucursales" >
+                <option value="">Seleccione...</option>
+                <option value="Centro">Centro</option>
+                <option value="Caballito">Caballito</option>
+            </select>
+
+            <label>Fecha: </label>
+
+            <input type="date" id="fechaVenta" />
+
+            <div id="botones">
+            <button id="close">Cancelar</button>
+            <input type="submit" id="save" value="Enviar" />
+            </div>
+            </form>
+        </div>
+      </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
